@@ -1,9 +1,7 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import App from './App';
+import shallow from 'enzyme';
 
-it('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/Learn React/);
-  expect(linkElement).toBeInTheDocument();
+it('smoke', () => {
+    shallow.render(<App/>);
 });
